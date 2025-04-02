@@ -2,9 +2,9 @@
 
 :root {
     --cor-de-fundo: #000000;
-    --verde: #ea00ff;
+    --rosa: #ea00ff;
     --branco: #FFFFFF;
-    --botao-ativo: #f8acff;
+    --botao-ativo: #f8b0ff;
     --botao-inativo: rgb(0, 0, 0);
     --texto-fundo: rgba(184, 72, 165, 0.329);
 }
@@ -33,7 +33,7 @@ body {
 }
 
 .titulo-principal span {
-    color: var(--verde);
+    color: var(--rosa);
 }
 
 .botao {
@@ -60,9 +60,34 @@ body {
     display: block;
 }
 
-.ativo{
+.botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+    border-bottom: 4px solid var(--rosa);
+}
+
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo{
+    display: block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--rosa);
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
